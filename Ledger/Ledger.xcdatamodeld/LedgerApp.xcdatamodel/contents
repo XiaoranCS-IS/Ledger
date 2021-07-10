@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="19G73" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Ledger" representedClassName="Ledger" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="totalCost" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="totalEarn" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="recordData" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Record" inverseName="ledger" inverseEntity="Record"/>
+        <relationship name="userList" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="ledgerData" inverseEntity="User"/>
+    </entity>
+    <entity name="Record" representedClassName="Record" syncable="YES">
+        <attribute name="cost" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="earn" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="attendUserList" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="attendRecordList" inverseEntity="User"/>
+        <relationship name="ledger" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Ledger" inverseName="recordData" inverseEntity="Ledger"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <relationship name="attendRecordList" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Record" inverseName="attendUserList" inverseEntity="Record"/>
+        <relationship name="ledgerData" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Ledger" inverseName="userList" inverseEntity="Ledger"/>
+    </entity>
+    <elements>
+        <element name="Ledger" positionX="-18" positionY="36" width="128" height="163"/>
+        <element name="Record" positionX="18" positionY="63" width="128" height="148"/>
+        <element name="User" positionX="-54" positionY="-9" width="128" height="133"/>
+    </elements>
+</model>

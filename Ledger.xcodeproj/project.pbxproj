@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07166767258AC9BB00BDE521 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07166766258AC9BB00BDE521 /* AppDelegate.swift */; };
+		0716676B258AC9BB00BDE521 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716676A258AC9BB00BDE521 /* ViewController.swift */; };
+		0716676E258AC9BB00BDE521 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0716676C258AC9BB00BDE521 /* Main.storyboard */; };
+		07166776258AC9BE00BDE521 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07166774258AC9BE00BDE521 /* LaunchScreen.storyboard */; };
+		071667A4258ACA1600BDE521 /* PersonRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716677E258ACA1600BDE521 /* PersonRecordTableViewCell.swift */; };
+		071667A5258ACA1700BDE521 /* AddGroupLedgerMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716677F258ACA1600BDE521 /* AddGroupLedgerMemberViewController.swift */; };
+		071667A6258ACA1700BDE521 /* AddLedgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07166780258ACA1600BDE521 /* AddLedgerViewController.swift */; };
+		071667A7258ACA1700BDE521 /* PersonLedgerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07166781258ACA1600BDE521 /* PersonLedgerTableViewController.swift */; };
+		071667A8258ACA1700BDE521 /* GroupRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07166782258ACA1600BDE521 /* GroupRecordTableViewCell.swift */; };
+		071667A9258ACA1700BDE521 /* GroupRecordDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07166783258ACA1600BDE521 /* GroupRecordDetailsViewController.swift */; };
+		071667AA258ACA1700BDE521 /* AddGroupRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07166784258ACA1600BDE521 /* AddGroupRecordTableViewCell.swift */; };
+		071667AB258ACA1700BDE521 /* PersonRecordDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07166785258ACA1600BDE521 /* PersonRecordDetailsViewController.swift */; };
+		071667AD258ACA1700BDE521 /* GroupLedgerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07166788258ACA1600BDE521 /* GroupLedgerTableViewController.swift */; };
+		071667AE258ACA1700BDE521 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07166789258ACA1600BDE521 /* CreateAccountViewController.swift */; };
+		071667B0258ACA1700BDE521 /* earn.png in Resources */ = {isa = PBXBuildFile; fileRef = 0716678C258ACA1600BDE521 /* earn.png */; };
+		071667B1258ACA1700BDE521 /* item.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0716678D258ACA1600BDE521 /* item.jpg */; };
+		071667B2258ACA1700BDE521 /* cost.png in Resources */ = {isa = PBXBuildFile; fileRef = 0716678E258ACA1600BDE521 /* cost.png */; };
+		071667B3258ACA1700BDE521 /* AddPersonRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716678F258ACA1600BDE521 /* AddPersonRecordViewController.swift */; };
+		071667B5258ACA1700BDE521 /* PersonRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07166791258ACA1600BDE521 /* PersonRecordViewController.swift */; };
+		071667BC258ACA1700BDE521 /* GroupRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07166799258ACA1600BDE521 /* GroupRecordViewController.swift */; };
+		071667BD258ACA1700BDE521 /* SignInSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716679A258ACA1600BDE521 /* SignInSegue.swift */; };
+		071667BE258ACA1700BDE521 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716679B258ACA1600BDE521 /* Extension.swift */; };
+		071667BF258ACA1700BDE521 /* AddGroupRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716679C258ACA1600BDE521 /* AddGroupRecordViewController.swift */; };
+		071667C0258ACA1700BDE521 /* Ledger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0716679D258ACA1600BDE521 /* Ledger.xcdatamodeld */; };
+		071667C6258ACA7600BDE521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071667C5258ACA7600BDE521 /* Assets.xcassets */; };
+		071667E6258ACD1100BDE521 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 071667E5258ACD1100BDE521 /* GoogleService-Info.plist */; };
+		0716684C258B2D5E00BDE521 /* Ledger+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07166846258B2D5A00BDE521 /* Ledger+CoreDataProperties.swift */; };
+		0716684D258B2D5E00BDE521 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07166847258B2D5B00BDE521 /* User+CoreDataClass.swift */; };
+		0716684E258B2D5E00BDE521 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07166848258B2D5C00BDE521 /* User+CoreDataProperties.swift */; };
+		0716684F258B2D5E00BDE521 /* Ledger+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07166849258B2D5D00BDE521 /* Ledger+CoreDataClass.swift */; };
+		07166850258B2D5E00BDE521 /* Record+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716684A258B2D5D00BDE521 /* Record+CoreDataClass.swift */; };
+		07166851258B2D5E00BDE521 /* Record+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716684B258B2D5E00BDE521 /* Record+CoreDataProperties.swift */; };
+		07753B1F258D4FEA0013D47A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07753B1E258D4FEA0013D47A /* AccountViewController.swift */; };
+		07BBBB79258C683C00DEBA99 /* ledger.png in Resources */ = {isa = PBXBuildFile; fileRef = 07BBBB78258C683B00DEBA99 /* ledger.png */; };
+		07BBBB80258C8AEA00DEBA99 /* customer.png in Resources */ = {isa = PBXBuildFile; fileRef = 07BBBB7F258C8AEA00DEBA99 /* customer.png */; };
+		765A66859963A379DF338ED7 /* Pods_Ledger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB251D8F54BD7945960C5DE2 /* Pods_Ledger.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		07166763258AC9BB00BDE521 /* Ledger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ledger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07166766258AC9BB00BDE521 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0716676A258AC9BB00BDE521 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0716676D258AC9BB00BDE521 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07166775258AC9BE00BDE521 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07166777258AC9BE00BDE521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0716677E258ACA1600BDE521 /* PersonRecordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonRecordTableViewCell.swift; sourceTree = "<group>"; };
+		0716677F258ACA1600BDE521 /* AddGroupLedgerMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGroupLedgerMemberViewController.swift; sourceTree = "<group>"; };
+		07166780258ACA1600BDE521 /* AddLedgerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLedgerViewController.swift; sourceTree = "<group>"; };
+		07166781258ACA1600BDE521 /* PersonLedgerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonLedgerTableViewController.swift; sourceTree = "<group>"; };
+		07166782258ACA1600BDE521 /* GroupRecordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupRecordTableViewCell.swift; sourceTree = "<group>"; };
+		07166783258ACA1600BDE521 /* GroupRecordDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupRecordDetailsViewController.swift; sourceTree = "<group>"; };
+		07166784258ACA1600BDE521 /* AddGroupRecordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGroupRecordTableViewCell.swift; sourceTree = "<group>"; };
+		07166785258ACA1600BDE521 /* PersonRecordDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonRecordDetailsViewController.swift; sourceTree = "<group>"; };
+		07166788258ACA1600BDE521 /* GroupLedgerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupLedgerTableViewController.swift; sourceTree = "<group>"; };
+		07166789258ACA1600BDE521 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		0716678C258ACA1600BDE521 /* earn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earn.png; sourceTree = "<group>"; };
+		0716678D258ACA1600BDE521 /* item.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = item.jpg; sourceTree = "<group>"; };
+		0716678E258ACA1600BDE521 /* cost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cost.png; sourceTree = "<group>"; };
+		0716678F258ACA1600BDE521 /* AddPersonRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPersonRecordViewController.swift; sourceTree = "<group>"; };
+		07166791258ACA1600BDE521 /* PersonRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonRecordViewController.swift; sourceTree = "<group>"; };
+		07166799258ACA1600BDE521 /* GroupRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupRecordViewController.swift; sourceTree = "<group>"; };
+		0716679A258ACA1600BDE521 /* SignInSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInSegue.swift; sourceTree = "<group>"; };
+		0716679B258ACA1600BDE521 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		0716679C258ACA1600BDE521 /* AddGroupRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGroupRecordViewController.swift; sourceTree = "<group>"; };
+		0716679E258ACA1600BDE521 /* LedgerApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LedgerApp.xcdatamodel; sourceTree = "<group>"; };
+		071667C5258ACA7600BDE521 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		071667E5258ACD1100BDE521 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		07166846258B2D5A00BDE521 /* Ledger+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ledger+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		07166847258B2D5B00BDE521 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		07166848258B2D5C00BDE521 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		07166849258B2D5D00BDE521 /* Ledger+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ledger+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0716684A258B2D5D00BDE521 /* Record+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Record+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0716684B258B2D5E00BDE521 /* Record+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Record+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		07753B1E258D4FEA0013D47A /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		07BBBB78258C683B00DEBA99 /* ledger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ledger.png; sourceTree = "<group>"; };
+		07BBBB7F258C8AEA00DEBA99 /* customer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customer.png; sourceTree = "<group>"; };
+		7D54D1DBC027BA59AD7DE743 /* Pods-Ledger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ledger.debug.xcconfig"; path = "Target Support Files/Pods-Ledger/Pods-Ledger.debug.xcconfig"; sourceTree = "<group>"; };
+		B52A994CB132087BCBD7457D /* Pods-Ledger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ledger.release.xcconfig"; path = "Target Support Files/Pods-Ledger/Pods-Ledger.release.xcconfig"; sourceTree = "<group>"; };
+		BB251D8F54BD7945960C5DE2 /* Pods_Ledger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ledger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07166760258AC9BB00BDE521 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				765A66859963A379DF338ED7 /* Pods_Ledger.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0716675A258AC9BB00BDE521 = {
+			isa = PBXGroup;
+			children = (
+				07166765258AC9BB00BDE521 /* Ledger */,
+				07166764258AC9BB00BDE521 /* Products */,
+				1B0FE1FFB71A076E17991C15 /* Pods */,
+				CDDE2288F722E8DEF4AF4CA2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		07166764258AC9BB00BDE521 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07166763258AC9BB00BDE521 /* Ledger.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07166765258AC9BB00BDE521 /* Ledger */ = {
+			isa = PBXGroup;
+			children = (
+				071667C5258ACA7600BDE521 /* Assets.xcassets */,
+				0716678A258ACA1600BDE521 /* images */,
+				07166792258ACA1600BDE521 /* DataType */,
+				0716677F258ACA1600BDE521 /* AddGroupLedgerMemberViewController.swift */,
+				07166784258ACA1600BDE521 /* AddGroupRecordTableViewCell.swift */,
+				07166782258ACA1600BDE521 /* GroupRecordTableViewCell.swift */,
+				0716677E258ACA1600BDE521 /* PersonRecordTableViewCell.swift */,
+				07166783258ACA1600BDE521 /* GroupRecordDetailsViewController.swift */,
+				0716679C258ACA1600BDE521 /* AddGroupRecordViewController.swift */,
+				07166799258ACA1600BDE521 /* GroupRecordViewController.swift */,
+				07166785258ACA1600BDE521 /* PersonRecordDetailsViewController.swift */,
+				0716678F258ACA1600BDE521 /* AddPersonRecordViewController.swift */,
+				07166791258ACA1600BDE521 /* PersonRecordViewController.swift */,
+				07166781258ACA1600BDE521 /* PersonLedgerTableViewController.swift */,
+				07166788258ACA1600BDE521 /* GroupLedgerTableViewController.swift */,
+				07166780258ACA1600BDE521 /* AddLedgerViewController.swift */,
+				07166789258ACA1600BDE521 /* CreateAccountViewController.swift */,
+				0716679A258ACA1600BDE521 /* SignInSegue.swift */,
+				0716679B258ACA1600BDE521 /* Extension.swift */,
+				07166766258AC9BB00BDE521 /* AppDelegate.swift */,
+				0716676A258AC9BB00BDE521 /* ViewController.swift */,
+				0716676C258AC9BB00BDE521 /* Main.storyboard */,
+				07753B1E258D4FEA0013D47A /* AccountViewController.swift */,
+				07166774258AC9BE00BDE521 /* LaunchScreen.storyboard */,
+				071667E5258ACD1100BDE521 /* GoogleService-Info.plist */,
+				07166777258AC9BE00BDE521 /* Info.plist */,
+				0716679D258ACA1600BDE521 /* Ledger.xcdatamodeld */,
+			);
+			path = Ledger;
+			sourceTree = "<group>";
+		};
+		0716678A258ACA1600BDE521 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				07BBBB7F258C8AEA00DEBA99 /* customer.png */,
+				07BBBB78258C683B00DEBA99 /* ledger.png */,
+				0716678C258ACA1600BDE521 /* earn.png */,
+				0716678D258ACA1600BDE521 /* item.jpg */,
+				0716678E258ACA1600BDE521 /* cost.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		07166792258ACA1600BDE521 /* DataType */ = {
+			isa = PBXGroup;
+			children = (
+				07166849258B2D5D00BDE521 /* Ledger+CoreDataClass.swift */,
+				07166846258B2D5A00BDE521 /* Ledger+CoreDataProperties.swift */,
+				07166847258B2D5B00BDE521 /* User+CoreDataClass.swift */,
+				07166848258B2D5C00BDE521 /* User+CoreDataProperties.swift */,
+				0716684A258B2D5D00BDE521 /* Record+CoreDataClass.swift */,
+				0716684B258B2D5E00BDE521 /* Record+CoreDataProperties.swift */,
+			);
+			path = DataType;
+			sourceTree = "<group>";
+		};
+		1B0FE1FFB71A076E17991C15 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D54D1DBC027BA59AD7DE743 /* Pods-Ledger.debug.xcconfig */,
+				B52A994CB132087BCBD7457D /* Pods-Ledger.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CDDE2288F722E8DEF4AF4CA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB251D8F54BD7945960C5DE2 /* Pods_Ledger.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07166762258AC9BB00BDE521 /* Ledger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0716677A258AC9BE00BDE521 /* Build configuration list for PBXNativeTarget "Ledger" */;
+			buildPhases = (
+				AB912DF066FA7ABA2948737D /* [CP] Check Pods Manifest.lock */,
+				0716675F258AC9BB00BDE521 /* Sources */,
+				07166760258AC9BB00BDE521 /* Frameworks */,
+				07166761258AC9BB00BDE521 /* Resources */,
+				D1E43B5B030A931F91EEAAB2 /* [CP] Embed Pods Frameworks */,
+				82A83A2CD9FB01C1E00244ED /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ledger;
+			productName = Ledger;
+			productReference = 07166763258AC9BB00BDE521 /* Ledger.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0716675B258AC9BB00BDE521 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					07166762258AC9BB00BDE521 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 0716675E258AC9BB00BDE521 /* Build configuration list for PBXProject "Ledger" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0716675A258AC9BB00BDE521;
+			productRefGroup = 07166764258AC9BB00BDE521 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07166762258AC9BB00BDE521 /* Ledger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07166761258AC9BB00BDE521 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07166776258AC9BE00BDE521 /* LaunchScreen.storyboard in Resources */,
+				07BBBB80258C8AEA00DEBA99 /* customer.png in Resources */,
+				071667E6258ACD1100BDE521 /* GoogleService-Info.plist in Resources */,
+				071667B0258ACA1700BDE521 /* earn.png in Resources */,
+				071667B1258ACA1700BDE521 /* item.jpg in Resources */,
+				0716676E258AC9BB00BDE521 /* Main.storyboard in Resources */,
+				071667C6258ACA7600BDE521 /* Assets.xcassets in Resources */,
+				071667B2258ACA1700BDE521 /* cost.png in Resources */,
+				07BBBB79258C683C00DEBA99 /* ledger.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82A83A2CD9FB01C1E00244ED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ledger/Pods-Ledger-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ledger/Pods-Ledger-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ledger/Pods-Ledger-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB912DF066FA7ABA2948737D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ledger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1E43B5B030A931F91EEAAB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ledger/Pods-Ledger-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ledger/Pods-Ledger-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ledger/Pods-Ledger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0716675F258AC9BB00BDE521 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07166850258B2D5E00BDE521 /* Record+CoreDataClass.swift in Sources */,
+				071667B5258ACA1700BDE521 /* PersonRecordViewController.swift in Sources */,
+				07753B1F258D4FEA0013D47A /* AccountViewController.swift in Sources */,
+				071667AE258ACA1700BDE521 /* CreateAccountViewController.swift in Sources */,
+				071667A8258ACA1700BDE521 /* GroupRecordTableViewCell.swift in Sources */,
+				0716676B258AC9BB00BDE521 /* ViewController.swift in Sources */,
+				0716684F258B2D5E00BDE521 /* Ledger+CoreDataClass.swift in Sources */,
+				071667A9258ACA1700BDE521 /* GroupRecordDetailsViewController.swift in Sources */,
+				071667BF258ACA1700BDE521 /* AddGroupRecordViewController.swift in Sources */,
+				071667A6258ACA1700BDE521 /* AddLedgerViewController.swift in Sources */,
+				07166767258AC9BB00BDE521 /* AppDelegate.swift in Sources */,
+				0716684C258B2D5E00BDE521 /* Ledger+CoreDataProperties.swift in Sources */,
+				071667BE258ACA1700BDE521 /* Extension.swift in Sources */,
+				071667C0258ACA1700BDE521 /* Ledger.xcdatamodeld in Sources */,
+				071667BD258ACA1700BDE521 /* SignInSegue.swift in Sources */,
+				071667A5258ACA1700BDE521 /* AddGroupLedgerMemberViewController.swift in Sources */,
+				071667A4258ACA1600BDE521 /* PersonRecordTableViewCell.swift in Sources */,
+				071667AB258ACA1700BDE521 /* PersonRecordDetailsViewController.swift in Sources */,
+				071667B3258ACA1700BDE521 /* AddPersonRecordViewController.swift in Sources */,
+				071667AA258ACA1700BDE521 /* AddGroupRecordTableViewCell.swift in Sources */,
+				071667A7258ACA1700BDE521 /* PersonLedgerTableViewController.swift in Sources */,
+				07166851258B2D5E00BDE521 /* Record+CoreDataProperties.swift in Sources */,
+				0716684E258B2D5E00BDE521 /* User+CoreDataProperties.swift in Sources */,
+				071667BC258ACA1700BDE521 /* GroupRecordViewController.swift in Sources */,
+				071667AD258ACA1700BDE521 /* GroupLedgerTableViewController.swift in Sources */,
+				0716684D258B2D5E00BDE521 /* User+CoreDataClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0716676C258AC9BB00BDE521 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0716676D258AC9BB00BDE521 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07166774258AC9BE00BDE521 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07166775258AC9BE00BDE521 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07166778258AC9BE00BDE521 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		07166779258AC9BE00BDE521 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0716677B258AC9BE00BDE521 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D54D1DBC027BA59AD7DE743 /* Pods-Ledger.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Ledger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoranli.Ledger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0716677C258AC9BE00BDE521 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B52A994CB132087BCBD7457D /* Pods-Ledger.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Ledger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoranli.Ledger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0716675E258AC9BB00BDE521 /* Build configuration list for PBXProject "Ledger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07166778258AC9BE00BDE521 /* Debug */,
+				07166779258AC9BE00BDE521 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0716677A258AC9BE00BDE521 /* Build configuration list for PBXNativeTarget "Ledger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0716677B258AC9BE00BDE521 /* Debug */,
+				0716677C258AC9BE00BDE521 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0716679D258ACA1600BDE521 /* Ledger.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0716679E258ACA1600BDE521 /* LedgerApp.xcdatamodel */,
+			);
+			currentVersion = 0716679E258ACA1600BDE521 /* LedgerApp.xcdatamodel */;
+			path = Ledger.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0716675B258AC9BB00BDE521 /* Project object */;
+}
